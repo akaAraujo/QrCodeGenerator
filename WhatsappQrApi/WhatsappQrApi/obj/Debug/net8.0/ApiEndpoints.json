@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "WhatsappQrApi.Controllers.QrCodeController",
+    "Method": "Generate",
+    "RelativePath": "api/qrcode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WhatsappQrApi.DTO.Requests.GenerateQrCodeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,6 @@
+@WhatsappQrApi_HostAddress = http://localhost:5076
+
+GET {{WhatsappQrApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

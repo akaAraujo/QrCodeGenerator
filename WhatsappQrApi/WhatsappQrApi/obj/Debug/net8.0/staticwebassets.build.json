@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "nTNKmfaSkQ1lKs/KMR+AdgiVmtptFMkl1x8RRy7F1Qw=",
+  "Source": "WhatsappQrApi",
+  "BasePath": "_content/WhatsappQrApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
