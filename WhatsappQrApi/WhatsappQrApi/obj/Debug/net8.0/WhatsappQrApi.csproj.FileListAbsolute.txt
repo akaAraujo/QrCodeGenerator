@@ -40,3 +40,4 @@ C:\Users\silve\OneDrive\Área de Trabalho\WhatsappQrApi\WhatsappQrApi\WhatsappQr
 C:\Users\silve\OneDrive\Área de Trabalho\WhatsappQrApi\WhatsappQrApi\WhatsappQrApi\obj\Debug\net8.0\WhatsappQrApi.pdb
 C:\Users\silve\OneDrive\Área de Trabalho\WhatsappQrApi\WhatsappQrApi\WhatsappQrApi\obj\Debug\net8.0\WhatsappQrApi.genruntimeconfig.cache
 C:\Users\silve\OneDrive\Área de Trabalho\WhatsappQrApi\WhatsappQrApi\WhatsappQrApi\obj\Debug\net8.0\ref\WhatsappQrApi.dll
+C:\Users\silve\OneDrive\Área de Trabalho\WhatsappQrApi\WhatsappQrApi\WhatsappQrApi\obj\Debug\net8.0\WhatsappQrApi.sourcelink.json
