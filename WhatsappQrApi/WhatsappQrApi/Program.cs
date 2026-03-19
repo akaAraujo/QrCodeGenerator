@@ -14,7 +14,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReact",
         policy => policy
-        .WithOrigins("https://qr-code-generator-git-main-akaaraujos-projects.vercel.app")
+        .WithOrigins("https://wpp-qr-code-generator.vercel.app/")
         .AllowAnyMethod()
         .AllowAnyHeader());
 });
