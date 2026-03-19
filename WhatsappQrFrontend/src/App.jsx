@@ -8,8 +8,8 @@ const isValidPhone = (v) => /^\d{10,15}$/.test(v.replace(/\D/g, ""));
 const isValidMsg   = (v) => v.trim().length >= 1;
 
 export default function App() {
-  const phoneId = useId();
-  const msgId   = useId();
+  const phoneId = "phone-input";
+  const msgId   = "message-input";
 
   const [phone,   setPhone]   = useState("");
   const [message, setMessage] = useState("");
@@ -66,24 +66,37 @@ export default function App() {
     setTouched({ phone: false, message: false });
   };
 
-  const handleDownload = () => {
-    const a = document.createElement("a");
-    a.href     = `data:image/png;base64,${qrBase64}`;
-    a.download = `whatsapp-qr-${phone.replace(/\D/g, "")}.png`;
-    a.click();
-  };
+const handleDownload = () => {
+  const byteChars   = atob(qrBase64);
+  const byteNumbers = Array.from(byteChars, c => c.charCodeAt(0));
+  const blob        = new Blob([new Uint8Array(byteNumbers)], { type: "image/png" });
+  const url         = URL.createObjectURL(blob);
 
-  const handleCopy = async () => {
-    try {
+  const a      = document.createElement("a");
+  a.href       = url;
+  a.download   = `whatsapp-qr-${phone.replace(/\D/g, "")}.png`;
+  a.click();
+
+  setTimeout(() => URL.revokeObjectURL(url), 5000); // limpa memória
+};
+
+const handleCopy = async () => {
+  try {
+    if (navigator.clipboard && window.ClipboardItem) {
       const res  = await fetch(`data:image/png;base64,${qrBase64}`);
       const blob = await res.blob();
       await navigator.clipboard.write([new ClipboardItem({ "image/png": blob })]);
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
-    } catch {
-      setApiError("Seu navegador não suporta copiar imagens diretamente. Use o botão de download.");
+    } else {
+      await navigator.clipboard.writeText(`data:image/png;base64,${qrBase64}`);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
     }
-  };
+  } catch {
+    setApiError("Seu navegador não suporta copiar imagens. Use o botão de download.");
+  }
+};
 
   return (
     <>
