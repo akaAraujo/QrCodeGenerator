@@ -1,4 +1,4 @@
-import { useState, useRef, useId } from "react";
+import { useState, useRef } from "react";
 import "./App.css";
 
 const API_URL = "https://qrcodegenerator-production-00ad.up.railway.app/api/qrcode";
