@@ -500,3 +500,23 @@ footer {
   .card   { padding: 28px; }
   .qr-frame img { width: 220px; height: 220px; }
 }
+
+.btn-text-loading { 
+  display: none; 
+}
+
+.btn-text-idle {
+  display: flex;
+  align-items: center; 
+  gap: 8px; 
+}
+
+.btn-loading .btn-text-idle { 
+  display: none; 
+}
+
+.btn-loading .btn-text-loading { 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+}
