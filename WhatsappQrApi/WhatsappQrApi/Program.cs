@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Options;
 using WhatsappQrApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +14,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReact",
         policy => policy
-        .AllowAnyOrigin()
+        .WithOrigins("https://wpp-qr-code-generator.vercel.app/")
         .AllowAnyMethod()
         .AllowAnyHeader());
 });

@@ -1,7 +1,7 @@
 import { useState, useRef, useId } from "react";
 import "./App.css";
 
-const API_URL = "https://localhost:7158/api/qrcode";
+const API_URL = "https://qrcodegenerator-production-00ad.up.railway.app/api/qrcode";
 
 /* ── Validation helpers ── */
 const isValidPhone = (v) => /^\d{10,15}$/.test(v.replace(/\D/g, ""));
