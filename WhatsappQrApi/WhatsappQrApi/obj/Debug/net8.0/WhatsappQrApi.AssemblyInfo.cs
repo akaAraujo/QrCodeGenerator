@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WhatsappQrApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c89d215b5e96c9903c405d448ba45aed8e1b582e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae2d6386e4a54ebce233236f9edca04e6fd74568")]
 [assembly: System.Reflection.AssemblyProductAttribute("WhatsappQrApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WhatsappQrApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
