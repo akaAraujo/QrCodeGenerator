@@ -6,7 +6,7 @@ Gerador de QR Code desenvolvido com **frontend em React + Vite** e **backend em 
 
 ## 🚀 Demonstração
 
-🔗 https://qr-code-generator-git-main-akaaraujos-projects.vercel.app/
+🔗 https://wpp-qr-code-generator.vercel.app/
 
 ---
 
